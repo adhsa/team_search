@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <br><br>
+    <div class="container">
+        <form action="/" method="post" id="team_engine">
+            <div>
+                <!--<label for="bb_query">Search</label>-->
+                <input name="team_query" id="team_query"> <!-- oninput="bbFunction(this.value)">-->
+                <button>Search</button>
+            </div>
+        </form>
+        <br>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">url</th>
+                <th scope="col">team</th>
+                <th scope="col">score</th>
+            </tr>
+            </thead>
+            <tbody id="team_search">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="static/js/team_search.js"></script>
+{% endblock content %}
