@@ -1,0 +1,4 @@
+flask
+elasticsearch
+gunicorn
+flask_cors
